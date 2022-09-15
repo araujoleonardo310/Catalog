@@ -1,50 +1,158 @@
-<h1>Projeto: Catalog ✏️</h1>
-
-<div align=center>
-    <em><strong>ÍNDICE</strong></em>
-</div>
-
+# Projeto: Catalog ✏️
 <br>
  
 <div align=center>
-    <a href="#sobre" align=center>Sobre o projeto</a>&nbsp;&nbsp;&nbsp;
+    <a href="#sobre" align=center>Sobre</a>&nbsp;&nbsp;&nbsp;
     <a href="#linguagens" align=center>Linguagens & Frameworks</a>&nbsp;&nbsp;&nbsp;
     <a href="#referencias" align=center>Referências & Links</a>&nbsp;&nbsp;&nbsp;
-    <a href="#biografia" align=center>Biografia</a> 
 </div>
+<br>
+
+### <span id="sobre">Sobre</span>
+
+Como criar uma API REST com .NET 5 e linguagem C#.
 
 <br>
 
-<h3 id="sobre">Sobre o projeto:</h3>
 
-<p>Apredendo a Criação de uma API REST usando inovações mais recentes do .NET 5, Visual Studio Code e linguagem C#.</p>
-
-<br>
-
-
-<h4>Skills obtidas com esse projeto</h4>
+### Percurso 🧑‍🎓
 
 <br>
 
-✔️ Desenvolvimento de API Restfull;
 
-✔️ Comados CLI dotnet;
+- Getting Started
+    - Introduction
+    - Creating the project
+    - Exploring the generated project files
+    - Trusting the self-signed certificate
+    - Exploring the default Swagger UI page
+    - Configuring Visual Studio Code settings
 
-✔️ Documentação Swagger;
+- Entity, Repository, Controller GET
+    - Introduction
+    - Adding an entity
+    - Ading an in-memory repository
+    - Creating the controller
+    - Implemeting GET all items
+    - Implemeting GET single item
+    - Returning a 404 NotFound status code
 
-✔️ Criação e manipulação de Classes e Controllers;
+-   Dependency Injection, DTOSs
+    - Introduction
+    - What is dependency injection?
+    - Extracting the repository interface
+    - Injecting the repository into the controller
+    - Registering the repository as a singleton
+    - Adding a Data Transfer Object DTO
+    - Creating the AsDto extension method
 
-✔️ Compreensão e exercício de linguagem C#;
+- POST, PUT, DELETE
+    - Introduction
+    - Implementing POST
+    - Adding validations via data annotations
+    - Implemeting PUT
+    - Implementing DELETE
+
+- Persisting Entities with MongoDB
+    - Introduction
+    - Using Postman
+    - Creating a MongoDB repository
+    - Using the MongoDB.Driver NuGet package
+    - Implementing MongoDB Create
+    - Running the MongoDB Docker container
+    - Configuring MongoDB connection settings
+    - Registering the MongoClient singleton
+    - Testing the MongoDB integration
+    - Exploring the created database in VS Code
+    - Implemeting MongoDB Get, Update and Delete
+
+- Tasks, Async and Await
+    - Introduction
+    - Using the Async suffix
+    - Using tasks in the repository
+    - Using async and await
+    - Returning completed tasks
+    - Using tasks in the controller
+    - Testing async methods in Postman
+
+- Secrets and Health Checks
+    - Introduction
+    - Enabling authentication in MongoDB
+    - Using the .NET Secret Manager
+    - Using the MongoDB credentials in the service
+    - Introduction to Health Checks
+    - Adding an endpoint for health checks
+    - Adding a MongoDB health check
+    - Adding checks for readiness and liveness
+    - Customizing the health check response
+    - Exploring other health check NuGet packages
+
+- Docker
+    - Introduction
+    - What is Docker?
+    - Removing https redirection
+    - Generating a Dockerfile in VS Code
+    - Building the Docker image
+    - Adding a Docker network
+    - Running the containers in the Docker network
+    - Running the REST API in Docker
+    - Pushing the container image to Docker Hub
+    - Exploring the image in Docker Hub
+    - Pulling the image back to the local box
+
+- Kubernetes
+    - Introduction
+    - What is Kubernetes?
+    - Enabling a Kubernetes cluster in Docker Desktop
+    - Installing the Kubernetes extension for VS Code
+    - Declaring the REST API Kuberentes deployment
+    - Creating a secret in Kubernetes
+    - Declaring health probes
+    - Declaring the REST API Kubernetes service
+    - Creating the REST API resources in Kubernetes
+    - Declaring the MongoDB Kubernetes StatefulSet
+    - Declaring the MongoDB Kubernetes service
+    - Creating the MongoDB resources in Kubernetes
+    - Testing the REST API hosted in Kubernetes
+    - Exploring the Kubernetes self-healing capability
+    - Scaling Kubernetes pods
+    - Adding logs via ILogger
+    - Getting a new image version into Kubernetes
+    - Load balancing requests across pods
+
+- Unit Testing and TDD
+    - Introduction
+    - What is unit testing?
+    - What is test driven development?
+    - Restructuring files and directories
+    - Creating the xUnit test project
+    - Building multiple projects in VS Code
+    - Adding NuGet packages for unit testing
+    - Testing GetItemAsync unexisting item
+    - Using the AAA pattern
+    - Stubbing dependencies via Moq
+    - Running tests in VS Code
+    - Using the .NET Core Test Explorer extension
+    - Testing GetItemAsync existing item
+    - Using FluentAssertions
+    - Testing GetItemsAsync
+    - Testing CreateItemAsync
+    - Testing UpdateItemAsync
+    - Testing DeleteItemAsync
+    - Refactoring and catching regressions
+    - Using TDD to test a yet to be created method
+    - Going back to green by fixing the failing test
+    - Testing the new controller method in Postman
 
 <br>
 
-<h3 id="status">Status</h3><br>
+### <span id="status">Status</span><br>
 
 **_Em desenvolvimento 🚧ℹ️_**
 
 <br>
 
-<h3 id=linguagens>Linguagens & Frameworks</h3>
+### <span id=linguagens>Linguagens & Frameworks</span>
 
 * C# 
 * .NET 5
@@ -58,29 +166,3 @@
 
 <br>
 
-<h3 id="autor">Biografia</h3><br>
-
-<p> Meu nome é Leonardo, mas prefiro Leo. Sou desenvolvedor de sistemas. Faço grduação de ADS</p><br>
-
-<h3 align=center><i>Gostos e Hobbies </i>📖🙋‍♂️</h3><br>
-
-Caminhar, correr, ciclismo, exercícios físicos, estudar, ler e aprender sobre desenvolvimento de sites e aplicações.</p><br>
-
-<div>
-    <h3><strong>Contatos</strong></h3><hr><br>    
-    <a href="https://api.whatsapp.com/send?l=pt-BR&phone=5585988511269&text=Prazer%2C%20sou%20Leonardo%20Ara%C3%BAjo%2C%20mas%20gosto%20de%20ser%20chamado%20por%20Leo.%0ASou%20universit%C3%A1rio%20de%20Sistemas%20de%20Informa%C3%A7%C3%A3o%2C%0A%0AComo%20posso%20ajudar%3F">
-        <img  src="https://i.imgur.com/YyLyMPi.png" height="30em" title="Icone do Whatssap">
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href="mailto:araujoleonardo310@gmail.com">
-        <img src="https://i.imgur.com/tLI3d6L.png" height="30em" title="Icone do Gmail">
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/araujoleonardo310">
-        <img  src="https://i.imgur.com/LpVinhs.png" height="30em" title="Icon do GitHub">
-    </a>   
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/leonardoaraujo310/">
-        <img src="https://i.imgur.com/HlqBmV8.png" height="30em" title="Ícone do LinkedIn">
-    </a>
-</div>
