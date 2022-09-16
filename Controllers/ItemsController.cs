@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Catalog.Dtos;
+using Catalog.Entities;
 using Catalog.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,6 +36,22 @@ namespace Catalog.Controllers
       var item = repository.GetItem(id);
       if (item == null) return NotFound();
       return item.AsDto();
+    }
+
+    // Post /items
+    [HttpPost]
+    public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+    {
+      Item item = new()
+      {
+        Id = Guid.NewGuid(),
+        Name = itemDto.Name,
+        Price = itemDto.Price,
+        CreateDate = DateTimeOffset.UtcNow
+
+      };
+      repository.CreateItem(item);
+      return CreatedAtAction(nameof(GetItem), new { id = item.Id }, item.AsDto());
     }
   }
 }
